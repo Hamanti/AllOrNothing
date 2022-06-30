@@ -41,6 +41,20 @@
   font-weight: 400
   color: #fff
   text-decoration: none
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    width: 0
+    height: 1px
+    background-color: #fff
+    bottom: -2px
+    left: 50%
+    transform: translateX(-50%)
+    transition: 0.5s
+  &:hover
+    &:after
+      width: 80%
 
 .nav-block__right-button 
   width: 127px
@@ -54,6 +68,7 @@
   font-size: 14px
   transition: 0.5s
   &:hover
+    cursor: pointer
     background-color: #fff
     color: #A248D9
 
@@ -145,5 +160,3 @@
     background-color: #fff
 
   
-
-

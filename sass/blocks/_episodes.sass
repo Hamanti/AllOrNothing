@@ -6,6 +6,12 @@
 
 .episodes-block__cards-item
   flex-basis: 30%
+  transition: 0.4s
+  &:hover
+    background-color: rgba(0, 0, 0, 0.025)
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.045)
+    border-radius: 20px
+    padding: 10px
 
 .episodes-block__head
   display: flex
@@ -20,6 +26,9 @@
     color: #9224D6
     font-weight: 400
     font-size: 16px
+    &:hover
+      cursor: pointer
+      color: darken(#9224D6, 20%)
 
 .cards-item__title
   width: 377px
@@ -52,12 +61,16 @@
     margin-bottom: 20px
 
 .cards-item
+  transition: 0.5s
   &__footer
     display: flex
     justify-content: space-between
   &__footer-left
     display: flex
     grid-gap: 12px
+    &:hover
+      color: darken(#9224D6, 20%)
+      cursor: pointer
   &__play-text
     font-weight: 500
     font-size: 16px
@@ -71,3 +84,6 @@
     opacity: 0.6
     font-weight: 400
     font-size: 16px
+
+.cards-item__img:hover
+  cursor: pointer
